@@ -25,6 +25,15 @@ class ModalViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        guard let appPresentedVC = UIApplication.shared.keyWindow?.rootViewController?.presentedViewController else {
+            print("No presented VC")
+            return
+        }
+        print("The app has this presented VC: \(appPresentedVC). I am \(self).")
+    }
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
