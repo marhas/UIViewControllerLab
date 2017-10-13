@@ -28,6 +28,11 @@ class VC4: UIViewController {
         }
     }
 
+    func presentModal() {
+        let modalVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ModalViewController")
+        present(modalVC, animated: true)
+    }
+
     deinit {
         print("\(String(describing: self.title)) is deiniting")
     }

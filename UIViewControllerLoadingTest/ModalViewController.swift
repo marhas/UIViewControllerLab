@@ -34,14 +34,29 @@ class ModalViewController: UIViewController {
     }
 
 
+    @IBAction func presentModalOnParent(_ sender: Any) {
+        if let navController = presentingViewController as? UINavigationController, let vc4 = navController.topViewController as? VC4 {
+            vc4.presentModal()
+        }
+
+        if let vc4 = presentingViewController as? VC4 {
+            vc4.presentModal()
+        }
+    }
+
+    @IBAction func presentModalOnParentNav(_ sender: Any) {
+        if let navController = presentingViewController as? NavController {
+            navController.presentModal()
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
     @IBAction
     public func close() {
-//        self.dismiss(animated: true, completion: nil)
-        delegate?.closeModal()
+        self.dismiss(animated: true, completion: nil)
+//        delegate?.closeModal()
     }
 
     @IBAction func navigateBack(_ sender: Any) {

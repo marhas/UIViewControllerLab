@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ta5-8g-ZX4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ta5-8g-ZX4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -72,6 +72,56 @@
             </objects>
             <point key="canvasLocation" x="1084" y="72"/>
         </scene>
+        <!--Second nav controller-->
+        <scene sceneID="Sz7-Ea-h4e">
+            <objects>
+                <viewController title="Second nav controller" id="okr-Sl-4HQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4BU-wG-ABs"/>
+                        <viewControllerLayoutGuide type="bottom" id="4kD-2K-sB0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TaR-pz-gNO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R5-bL-gDh">
+                                <rect key="frame" x="138" y="236" width="99" height="30"/>
+                                <state key="normal" title="Present modal"/>
+                                <connections>
+                                    <segue destination="69Z-om-BKK" kind="presentation" id="bQH-Hu-012"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6R5-bL-gDh" firstAttribute="centerY" secondItem="TaR-pz-gNO" secondAttribute="centerY" id="AKD-jh-83b"/>
+                            <constraint firstItem="6R5-bL-gDh" firstAttribute="centerX" secondItem="TaR-pz-gNO" secondAttribute="centerX" id="kcZ-RR-1Gl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S5f-it-2ad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2La-hC-Aaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="747.9760119940031"/>
+        </scene>
+        <!--Modal on second nav controller-->
+        <scene sceneID="14B-dQ-SWb">
+            <objects>
+                <viewController title="Modal on second nav controller" id="69Z-om-BKK" customClass="SecondModalViewController" customModule="UIViewControllerLoadingTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ab8-lb-S3L"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebT-0g-UYr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c3V-T5-2ym">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKg-zf-c8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417" y="738"/>
+        </scene>
         <!--VC3-->
         <scene sceneID="bgq-Jw-CLZ">
             <objects>
@@ -91,11 +141,20 @@
                                     <segue destination="dA8-3I-0MV" kind="show" id="C96-CY-1fy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb0-5l-6tq">
+                                <rect key="frame" x="117" y="429" width="140" height="30"/>
+                                <state key="normal" title="Modal nav controller"/>
+                                <connections>
+                                    <segue destination="DQO-F6-wYm" kind="presentation" id="n5A-fb-Fee"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="H8p-CE-l7Y" firstAttribute="centerY" secondItem="8ZQ-q3-fOZ" secondAttribute="centerY" id="CrJ-U7-pQp"/>
                             <constraint firstItem="H8p-CE-l7Y" firstAttribute="centerX" secondItem="8ZQ-q3-fOZ" secondAttribute="centerX" id="Kca-y8-7eb"/>
+                            <constraint firstItem="Lb0-5l-6tq" firstAttribute="centerX" secondItem="8ZQ-q3-fOZ" secondAttribute="centerX" id="di2-7c-1Jn"/>
+                            <constraint firstItem="Lb0-5l-6tq" firstAttribute="top" secondItem="H8p-CE-l7Y" secondAttribute="bottom" constant="81" id="oXq-so-Dhn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -137,7 +196,7 @@
         <!--Modal 1-->
         <scene sceneID="Fgm-Tp-FYm">
             <objects>
-                <viewController title="Modal 1" id="GUc-DR-1rI" customClass="ModalViewController" customModule="UIViewControllerLoadingTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalViewController" title="Modal 1" id="GUc-DR-1rI" customClass="ModalViewController" customModule="UIViewControllerLoadingTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kmb-5i-vWN"/>
                         <viewControllerLayoutGuide type="bottom" id="0SI-99-2nS"/>
@@ -167,15 +226,33 @@
                                     <segue destination="4P2-zL-Zuk" kind="presentation" id="yYo-XR-1lS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4q-Dp-m2O" userLabel="I">
+                                <rect key="frame" x="91" y="524" width="193" height="30"/>
+                                <state key="normal" title="Present modal on parent VC"/>
+                                <connections>
+                                    <action selector="presentModalOnParent:" destination="GUc-DR-1rI" eventType="touchUpInside" id="WjX-1J-hZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zH-9r-aYY">
+                                <rect key="frame" x="54" y="578" width="266" height="30"/>
+                                <state key="normal" title="Present modal on parent nav controller"/>
+                                <connections>
+                                    <action selector="presentModalOnParentNav:" destination="GUc-DR-1rI" eventType="touchUpInside" id="38U-42-UI3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="87q-f2-LOo" firstAttribute="centerY" secondItem="aa4-Ca-5Ns" secondAttribute="centerY" id="PN8-d5-JPt"/>
                             <constraint firstItem="87q-f2-LOo" firstAttribute="centerX" secondItem="aa4-Ca-5Ns" secondAttribute="centerX" id="PaC-HH-aUc"/>
+                            <constraint firstItem="s4q-Dp-m2O" firstAttribute="top" secondItem="cpP-eC-Rzy" secondAttribute="bottom" constant="31" id="UGU-q2-3Bb"/>
                             <constraint firstItem="cpP-eC-Rzy" firstAttribute="centerX" secondItem="9qy-14-al9" secondAttribute="centerX" id="ZSc-Md-jzL"/>
                             <constraint firstItem="cpP-eC-Rzy" firstAttribute="top" secondItem="9qy-14-al9" secondAttribute="bottom" constant="32" id="apo-2F-rDt"/>
                             <constraint firstItem="9qy-14-al9" firstAttribute="top" secondItem="87q-f2-LOo" secondAttribute="bottom" constant="52.5" id="hOU-DH-I2c"/>
                             <constraint firstItem="9qy-14-al9" firstAttribute="centerX" secondItem="87q-f2-LOo" secondAttribute="centerX" id="nJx-Pt-C1p"/>
+                            <constraint firstItem="4zH-9r-aYY" firstAttribute="top" secondItem="s4q-Dp-m2O" secondAttribute="bottom" constant="24" id="o5O-E2-9oR"/>
+                            <constraint firstItem="s4q-Dp-m2O" firstAttribute="centerX" secondItem="aa4-Ca-5Ns" secondAttribute="centerX" id="qDz-Gy-eti"/>
+                            <constraint firstItem="4zH-9r-aYY" firstAttribute="centerX" secondItem="aa4-Ca-5Ns" secondAttribute="centerX" id="zjK-ik-5Tg"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -199,8 +276,7 @@
                                 <rect key="frame" x="168" y="318.5" width="39" height="30"/>
                                 <state key="normal" title="Close"/>
                                 <connections>
-                                    <action selector="close" destination="GUc-DR-1rI" eventType="touchUpInside" id="6he-RT-4el"/>
-                                    <action selector="close" destination="4P2-zL-Zuk" eventType="touchUpInside" id="r1b-mI-Jth"/>
+                                    <action selector="close" destination="4P2-zL-Zuk" eventType="touchUpInside" id="xog-71-TXj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sv-Ft-Cux">
@@ -225,13 +301,13 @@
             </objects>
             <point key="canvasLocation" x="4116" y="-166"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav Controller-->
         <scene sceneID="iFh-W1-tTL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ta5-8g-ZX4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ta5-8g-ZX4" customClass="NavController" customModule="UIViewControllerLoadingTest" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xtO-W4-1S2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -242,6 +318,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OZ-8S-s0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-532" y="73.313343328335833"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gGw-54-B4n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DQO-F6-wYm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VFc-3s-mDE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="okr-Sl-4HQ" kind="relationship" relationship="rootViewController" id="tcI-Wj-d2z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kk8-Cv-BH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="748"/>
         </scene>
     </scenes>
 </document>
