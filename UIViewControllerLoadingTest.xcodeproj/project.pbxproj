@@ -17,8 +17,12 @@
 		5F5C61CB1F5709D800B4D57F /* VC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C61CA1F5709D800B4D57F /* VC4.swift */; };
 		5F5C61CD1F5D332B00B4D57F /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C61CC1F5D332B00B4D57F /* ModalViewController.swift */; };
 		5F6621461F5D36AC007E1A88 /* UIViewController+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6621451F5D36AC007E1A88 /* UIViewController+util.swift */; };
-		5F81EDB420E4B086009CE1F4 /* SegueVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F81EDB320E4B086009CE1F4 /* SegueVC1.swift */; };
-		5FFB8D6720E4B8B300F53D4D /* SegueVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB8D6620E4B8B300F53D4D /* SegueVC2.swift */; };
+		5F81EDB420E4B086009CE1F4 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		5FE4FE3A1F90A5C90001D580 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FE391F90A5C90001D580 /* NavController.swift */; };
+		5FE4FE3C1F90B4740001D580 /* SecondModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FE3B1F90B4740001D580 /* SecondModalViewController.swift */; };
+		5FFB8D6720E4B8B300F53D4D /* (null) in Sources */ = {isa = PBXBuildFile; };
+		5FFB8D6A20E4C3FE00F53D4D /* SegueVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB8D6820E4C3FD00F53D4D /* SegueVC1.swift */; };
+		5FFB8D6B20E4C3FE00F53D4D /* SegueVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB8D6920E4C3FE00F53D4D /* SegueVC2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +38,10 @@
 		5F5C61CA1F5709D800B4D57F /* VC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC4.swift; sourceTree = "<group>"; };
 		5F5C61CC1F5D332B00B4D57F /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		5F6621451F5D36AC007E1A88 /* UIViewController+util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+util.swift"; sourceTree = "<group>"; };
-		5F81EDB320E4B086009CE1F4 /* SegueVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueVC1.swift; sourceTree = "<group>"; };
-		5FFB8D6620E4B8B300F53D4D /* SegueVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueVC2.swift; sourceTree = "<group>"; };
+		5FE4FE391F90A5C90001D580 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		5FE4FE3B1F90B4740001D580 /* SecondModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModalViewController.swift; sourceTree = "<group>"; };
+		5FFB8D6820E4C3FD00F53D4D /* SegueVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueVC1.swift; sourceTree = "<group>"; };
+		5FFB8D6920E4C3FE00F53D4D /* SegueVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueVC2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,18 +75,20 @@
 			isa = PBXGroup;
 			children = (
 				5F5C61B21F5704C200B4D57F /* AppDelegate.swift */,
-				5F5C61B61F5704C200B4D57F /* Main.storyboard */,
 				5F5C61B91F5704C200B4D57F /* Assets.xcassets */,
-				5F5C61BB1F5704C200B4D57F /* LaunchScreen.storyboard */,
 				5F5C61BE1F5704C200B4D57F /* Info.plist */,
+				5F5C61BB1F5704C200B4D57F /* LaunchScreen.storyboard */,
+				5F5C61B61F5704C200B4D57F /* Main.storyboard */,
+				5F5C61CC1F5D332B00B4D57F /* ModalViewController.swift */,
+				5FE4FE391F90A5C90001D580 /* NavController.swift */,
+				5FE4FE3B1F90B4740001D580 /* SecondModalViewController.swift */,
+				5FFB8D6820E4C3FD00F53D4D /* SegueVC1.swift */,
+				5FFB8D6920E4C3FE00F53D4D /* SegueVC2.swift */,
+				5F6621451F5D36AC007E1A88 /* UIViewController+util.swift */,
 				5F5C61C41F5709AF00B4D57F /* VC1.swift */,
 				5F5C61C61F5709BF00B4D57F /* VC2.swift */,
 				5F5C61C81F5709CB00B4D57F /* VC3.swift */,
 				5F5C61CA1F5709D800B4D57F /* VC4.swift */,
-				5F5C61CC1F5D332B00B4D57F /* ModalViewController.swift */,
-				5F6621451F5D36AC007E1A88 /* UIViewController+util.swift */,
-				5F81EDB320E4B086009CE1F4 /* SegueVC1.swift */,
-				5FFB8D6620E4B8B300F53D4D /* SegueVC2.swift */,
 			);
 			path = UIViewControllerLoadingTest;
 			sourceTree = "<group>";
@@ -161,11 +169,15 @@
 				5F6621461F5D36AC007E1A88 /* UIViewController+util.swift in Sources */,
 				5F5C61C91F5709CB00B4D57F /* VC3.swift in Sources */,
 				5F5C61CB1F5709D800B4D57F /* VC4.swift in Sources */,
-				5F81EDB420E4B086009CE1F4 /* SegueVC1.swift in Sources */,
+				5FFB8D6A20E4C3FE00F53D4D /* SegueVC1.swift in Sources */,
+				5F81EDB420E4B086009CE1F4 /* (null) in Sources */,
 				5F5C61B31F5704C200B4D57F /* AppDelegate.swift in Sources */,
+				5FE4FE3C1F90B4740001D580 /* SecondModalViewController.swift in Sources */,
+				5FFB8D6B20E4C3FE00F53D4D /* SegueVC2.swift in Sources */,
 				5F5C61CD1F5D332B00B4D57F /* ModalViewController.swift in Sources */,
-				5FFB8D6720E4B8B300F53D4D /* SegueVC2.swift in Sources */,
+				5FFB8D6720E4B8B300F53D4D /* (null) in Sources */,
 				5F5C61C71F5709BF00B4D57F /* VC2.swift in Sources */,
+				5FE4FE3A1F90A5C90001D580 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
